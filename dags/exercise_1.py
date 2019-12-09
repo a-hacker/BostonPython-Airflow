@@ -9,7 +9,7 @@ import zipfile
 import os
 
 
-def unzip_names():
+def unzip_names(**kwargs):
     input_file = "/tmp/work/names.zip"
     names_directory = "/tmp/work/"
 

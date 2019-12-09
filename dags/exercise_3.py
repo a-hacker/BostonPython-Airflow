@@ -11,7 +11,7 @@ import os
 YEAR_RANGES = [(1880, 1899), (1900, 1949), (1950, 1999), (2000, 2018)]
 
 
-def unzip_names():
+def unzip_names(**kwargs):
     input_file = "/tmp/work/names.zip"
     names_directory = "/tmp/work/"
 
@@ -30,7 +30,7 @@ def find_common(start_year, end_year):
 
     print("Finding common name...")
     for f in files:
-        given_year = int(f[3:7])
+        given_year = int(f[3:7]) if f.endswith(".txt") else None
         if f.endswith(".txt") and start_year < given_year < end_year:
             with open(os.path.join(names_directory, f)) as current:
                 for row in current:
