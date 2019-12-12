@@ -53,3 +53,8 @@ The dags directory is where you will put the DAGS you will create. It is mapped 
 Put files your DAGS create locally in the container in /tmp/work
 
 Consult the solutions directory or DAG examples if you need to.
+
+Slides:
+=======
+
+Slides are stored in the [PyData-Airflow-Slides](https://github.com/a-hacker/PyData-Airflow-Slides) repo.
